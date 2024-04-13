@@ -117,7 +117,7 @@ def verifica_email(nome_usuario):
     if '@' in nome_usuario:
         dominio = nome_usuario.split('@')[1]
         if '.com' in dominio or '.br' in dominio:
-            return True
+            return nome_usuario.islower() 
     return False
 
 # Função para cadastrar um usuário com verificações
